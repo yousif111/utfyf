@@ -1,0 +1,52 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #222; /* لون الخلفية الداكن */
+  color: #fff; /* لون النص الفاتح */
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+#resolutionSelect {
+  margin-top: 10px;
+  font-size: 18px; /* زيادة حجم الخط */
+  padding: 10px; /* زيادة الهامش الداخلي */
+  background-color: #333; /* لون الخلفية */
+  color: #fff; /* لون النص */
+  border: none; /* إزالة الحدود */
+  border-radius: 5px; /* تدوير الحواف */
+}
+
+#imageContainer {
+  margin-top: 30px;
+}
+
+.image {
+  max-width: 50%; /* تحديد عرض الصورة بنصف عرض الموقع */
+  height: auto;
+  border: 2px solid #ccc;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image.show {
+  opacity: 3;
+}
+
+/* تعديل لون الحدود للصور */
+.image {
+  border-color: #888;
+}
+
+/* تعديل لون الحدود عند التحديد */
+.image.show {
+  border-color: #f00; /* يمكنك تغيير هذا اللون حسب تفضيلك */
+}
+
+/* تغيير لون الخيارات */
+option {
+  background-color: #333;
+  color: #fff;
+}
