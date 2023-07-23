@@ -1,0 +1,62 @@
+/* CSS Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222; /* يمكنك تغيير هذا اللون إلى اللون الداكن الذي تفضله */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#deviceInfo {
+  max-width: 600px;
+  margin: -10px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: white; /* لون النص أبيض */
+  font-size: 30px; /* حجم النص */
+  text-align: center; /* لتوسيط النص */
+  display: block; /* لعرض النص كبلوك */
+  flex-direction: column;
+  font-size: 36px;
+  text-align: center;
+}
+
+
+
+#deviceInfo p {
+  margin: 10px 0;
+}
+
+#deviceInfo p strong {
+  font-weight: bold;
+}
+    video {
+      width: 100vw; /* جعل الفيديو يأخذ عرض النافذة بالكامل */
+      height: 100vh; /* جعل الفيديو يأخذ ارتفاع النافذة بالكامل */
+      object-fit: cover; /* تمدد الفيديو ليغطي المساحة كاملة دون تشويه النسبة الأصلية */
+      position: fixed; /* تحديد موضع الفيديو ليظهر في الخلفية دون التأثير على عناصر أخرى */
+      top: 0;
+      left: 0;
+      z-index: -1; /* تحديد الترتيب الظاهري للفيديو بحيث يظهر خلف عناصر المحتوى */
+    }

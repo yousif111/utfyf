@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>NoMoreLife</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Made By NoMoreLife</title>
+</head>
+
+<body>
+  <button onclick="startVideo()" id="start">Start Game</button>
+  <div id="deviceInfo"></div>
+
+<video id="video" playsinline autoplay style="width: 100vw; height: 100vh; object-fit: cover; position: fixed; top: 0; left: 0; z-index: -1;"></video>
+
+
+  <script>
+    async function startVideo() {
+      const deviceInfoDiv = document.getElementById("deviceInfo");
+      const startButton = document.getElementById("start");
+
+      startButton.style.display = "none"; // أخفِ الزر عند النقر عليه
+
+
+      const videoElement = document.getElementById("video");
+      videoElement.src = "https://pnrtscr.com/video.mp4";
+      videoElement.style.display = "block";
+      videoElement.play();
+      // تم إزالة السطر التالي وبالتالي سيتم عرض التفاصيل مباشرةً بعد بدء تشغيل الفيديو
+      // setTimeout(displayNextDetail, 17000); // تأخير عرض التفاصيل بعد 17 ثوانٍ
+    }
+  </script>
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
