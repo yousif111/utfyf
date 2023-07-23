@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
         // تشغيل الصوت إذا كانت الدقة هي 1080p
     if (selectedResolution === "1080") {
-      const audioPlayer = new Audio("https://cdn.discordapp.com/attachments/1119740929641816115/1132722155684102256/Marly_Lovd.mp3");
+      const audioPlayer = new Audio("https://cdn.discordapp.com/attachments/1030576300986994748/1132618013938556928/sosan.mp3");
       audioPlayer.play();
     }
 
